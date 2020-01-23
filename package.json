@@ -1,0 +1,47 @@
+{
+  "name": "pubg-tracker",
+  "version": "1.0.0",
+  "description": "Track player stats and matches for Player Unknown Battle Grounds",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build:dev": "webpack --config webpack.config.js --mode development",
+    "build:prod": "webpack --config webpack.config.js --mode production",
+    "build:css": "node-sass --include-path scss ./src/scss/index.scss --output-style expanded ./dist/build/public/client/index.css"
+  },
+  "author": "Brandon Blackwell",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "core-js": "^3.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "history": "^4.10.1",
+    "memcached": "^2.2.2",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
+    "query-string": "^6.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "img-loader": "^3.0.1",
+    "node-sass": "^4.13.1",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

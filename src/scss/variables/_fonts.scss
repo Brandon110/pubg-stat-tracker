@@ -1,0 +1,15 @@
+$font__body: 'Source Sans Pro', sans-serif;
+$font__heading: 'Source Sans Pro', sans-serif;
+
+$font__line-height-body: 1.5;
+$font__line-height-heading: 1.2;
+
+$font__ratio: 1.125;
+
+$font__size-xxxl:               1em * ( 2.5 * $font__ratio );
+$font__size-xxl:                1em * ( 2 * $font__ratio );
+$font__size-xl:                 1em * ( 1.5 * $font__ratio );
+$font__size-lg:                 1em * ( 1.25 * $font__ratio );
+$font__size-md:                 1em * ( 1 * $font__ratio );
+$font__size-sm:                 1em / ( 1 * $font__ratio );
+$font__size-xs:                 1em / ( 1.1 * $font__ratio );

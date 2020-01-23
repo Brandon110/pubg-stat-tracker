@@ -1,0 +1,45 @@
+body {
+    height: 100%;
+}
+
+main {
+    display: block;
+}
+
+.container {
+    width: 100%;
+
+    > * {
+        margin-left: auto;
+        margin-right: auto;
+        @include contentWidth();
+    }
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-content {
+    flex: 1;
+}
+
+.homepage {
+
+    .site-header {
+        
+        .site-header-content {
+            
+            .site-title {
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            .search-form {
+                display: none;
+            }
+        }
+    }
+}

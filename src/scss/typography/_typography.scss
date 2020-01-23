@@ -1,0 +1,17 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $color__text-main;
+    font-family: $font__body;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.2px;
+    line-height: $font__line-height-body;  
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+
+/*-----------------------------
+## Headings
+------------------------------*/
+@import 'headings';
