@@ -7,7 +7,8 @@
     "start": "node server.js",
     "build:dev": "webpack --config webpack.config.js --mode development",
     "build:prod": "webpack --config webpack.config.js --mode production",
-    "build:css": "node-sass --include-path scss ./src/scss/index.scss --output-style expanded ./dist/build/public/client/index.css"
+    "build:css": "node-sass --include-path scss ./src/scss/index.scss --output-style expanded ./dist/build/public/client/index.css",
+    "heroku-postbuild": "npm install --dev && webpack --config webpack.config.js --mode production && node-sass --include-path scss ./src/scss/index.scss --output-style expanded ./dist/build/public/client/index.css"
   },
   "engines": {
     "node": "v8.11.1",
