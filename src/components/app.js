@@ -3,7 +3,7 @@ import { Router } from 'react-router-dom';
 import history from '../history';
 import Header from './header';
 import Footer from './footer';
-import Routes from './Routes';
+import Routes from './routes';
 
 const App = () => (
     <Router history={history}>
