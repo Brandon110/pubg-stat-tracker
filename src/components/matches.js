@@ -55,6 +55,10 @@ const Matches = ({ matchIds, matches, handleFetchMatches, handleLoadMoreMatches,
             return <ErrorMsg errorMsg={matches.error.error} />
         }
 
+        if (matches.loading) {
+            return <Loading />
+        }
+
         if (!matches.data.length) {
             return <p>No matches to be found.</p>
         }
@@ -71,7 +75,6 @@ const Matches = ({ matchIds, matches, handleFetchMatches, handleLoadMoreMatches,
                         )
                     })
                 }
-                {matches.loading && <Loading />}
                 <button
                     // Loads more matches.
                     // We pass in platform, matchIds, the current length of matches array, and number of matches to fetch.
