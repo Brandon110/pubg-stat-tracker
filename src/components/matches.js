@@ -56,7 +56,7 @@ const Matches = ({ matchIds, matches, handleFetchMatches, handleLoadMoreMatches,
         }
 
         if (!matches.data.length) {
-            return <Loading />
+            return <p>No matches to be found.</p>
         }
 
         return (
