@@ -46,10 +46,10 @@ const LifetimeStats = ({ location, playerId, handleFetchLifetimeStats, lifetimeS
                      * Check to see if there is data to show
                      * 
                      * We check to see if there is game data to show by checking if
-                     * players wins and losses are above 0. Else we assume there 
+                     * players wins or losses are above 0. Else we assume there 
                      * is no game data to show.
                      */
-                    wins > 0 && losses > 0 ?
+                    wins > 0 || losses > 0 ?
                         <Fragment>
                             <p className='top-10s'><span>Top 10s</span> {top10s}</p>
                             <p className='wins-loosses'><span>Wins/Losses</span> {wins}/{losses}</p>
