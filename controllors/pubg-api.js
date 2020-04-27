@@ -1,4 +1,4 @@
-var PubgApi = require('../utils/pubg-api'),
+var PubgApi = require('../libs/pubg-api'),
     pubgApiInstance = new PubgApi(process.env.PUBG_API_KEY);
 
 /**
